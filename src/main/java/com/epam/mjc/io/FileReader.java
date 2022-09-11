@@ -25,7 +25,7 @@ public class FileReader {
         Map<String, String> profileMap = new HashMap();
 
         for (String line: everything) {
-            String[] pair = line.split(":");
+            String[] pair = line.split(": ");
             profileMap.put(pair[0], pair[1]);
         }
 

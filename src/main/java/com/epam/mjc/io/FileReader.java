@@ -23,7 +23,7 @@ public class FileReader {
             e.printStackTrace();
         }
         String[] everything = stringBuilder.toString().split("\n");
-        Map<String, String> profileMap = new HashMap();
+        Map<String, String> profileMap = new HashMap<String, String>();
 
         for (String line: everything) {
             String[] pair = line.split(": ");

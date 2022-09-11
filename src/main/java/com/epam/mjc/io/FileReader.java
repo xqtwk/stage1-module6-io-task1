@@ -19,8 +19,9 @@ public class FileReader {
                 string = reader.readLine();
             }
 
-        } catch (IOException e) {}
-
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         String[] everything = stringBuilder.toString().split("\n");
         Map<String, String> profileMap = new HashMap();
 
